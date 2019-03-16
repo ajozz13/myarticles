@@ -38,7 +38,7 @@ module Api
       private
 
       def author_params
-        params.permit( :title, :body )
+        params.require( :author ).permit( :title, :body )
       end
 
       def set_author
