@@ -1,24 +1,13 @@
-# README
+# My Articles Rails API Sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a new target sample app for reference.
 
 Things you may want to cover:
 
-* Ruby version
+* RSpec
 
-* System dependencies
+* Rails
 
-* Configuration
+Regards
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Alberto Ochoa
