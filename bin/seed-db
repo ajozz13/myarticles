@@ -1,0 +1,6 @@
+#!/bin/bash
+#seed the development db
+rails db:seed RAILS_ENV=development "$@"
+#seed the test db
+rails db:seed RAILS_ENV=test "$@"
+
