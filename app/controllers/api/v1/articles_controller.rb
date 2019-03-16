@@ -20,7 +20,7 @@ module Api
         if @article.save
           respond @article, 0, 'New Article Created', :created
         else
-          respond @article.errors, 1, 'Could not create article', :unprocesable_entity
+          respond @article.errors, 1, 'Could not create article', :bad_request
         end
       end
 
@@ -40,7 +40,7 @@ module Api
       private
 
       def article_params
-        params.permit( :title, :body )
+        params.require( :article ).permit( :title, :body, :author_id )
       end
 
       def set_article
